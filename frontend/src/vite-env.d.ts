@@ -1,0 +1,12 @@
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_API_URL?: string;
+  readonly VITE_SUPABASE_URL?: string;
+  /** The PUBLISHABLE key only. A secret/service key must never be placed in the frontend. */
+  readonly VITE_SUPABASE_PUBLISHABLE_KEY?: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}

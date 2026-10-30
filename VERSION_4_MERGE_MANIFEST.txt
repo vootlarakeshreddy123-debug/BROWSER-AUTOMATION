@@ -1,0 +1,16 @@
+NEXA VERSION 4 — MERGE MANIFEST
+
+Base project: NEXA-project-adaptive-fix-v3.zip
+Overlay: NEXA-v3-recovery-update.zip
+
+Merge method:
+- Started with all files from the complete v3 archive.
+- Applied all 12 files from the recovery-update archive over matching paths.
+- Added a manifest so the provenance and limitations are clear.
+
+Validation:
+- The recovery test file currently fails during pytest collection:
+  ImportError: cannot import name 'split_type_clause' from 'agent.goals'.
+- Therefore this archive is a combined V4 integration snapshot, not a verified working release.
+- Do not delete your original v3 or recovery ZIP.
+- Full backend, frontend, and live browser testing has not been completed.
